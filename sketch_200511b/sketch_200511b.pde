@@ -4,7 +4,7 @@ List <Circulo>lista; // <> Operador Diamante
 String q="";
 float x,y;
 int n=-1; // para el id del circulo
-int k = 15; // numero de circulos en la lista
+int k = 30; // numero de circulos en la lista
 int w =0;
 void setup(){
     size(400,300);
