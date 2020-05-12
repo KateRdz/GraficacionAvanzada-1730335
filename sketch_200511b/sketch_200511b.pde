@@ -48,6 +48,7 @@ void mousePressed(){
 }
 
 void mouseReleased(){
+   // <> tmp = lista.get(parseInt(q));
    q = "";
    n = -1; // no se está seleccionando nigún círculo.
    tmp.mover = false;
@@ -55,8 +56,7 @@ void mouseReleased(){
 }
 
 void mouseDragged(){
-   for(int i=lista.size()-1; i>=0  ;i--){
-          tmp = lista.get(i);
+           tmp = lista.get(parseInt(q));
           if (tmp.isAdentro(mouseX, mouseY) ){
               tmp.x=mouseX;
               tmp.y=mouseY;
@@ -67,4 +67,3 @@ void mouseDragged(){
           
    }
      
-}
